@@ -89,6 +89,10 @@ $(function () {
     $('.ReportViewImg , .repNo').click(function () {
         $('.jblikeViewContent').hide()
     })
+    // 二级评论
+    $('#cancelinfo').click(function(){
+        $('.ReplyContent').hide()
+    })
     // 子评论点击
     $('#newsinfo > .reviewTow > .reviewLike2').click(function(){
         $('.SubContent').show()
