@@ -145,6 +145,11 @@
                         <p>萧十一郎</p>
                         <i>8小时前</i>
                     </div>
+                    <div class="reviewLike2">
+                        <!-- <p>12</p>
+                        <img src="./images/favor.png" alt=""> -->
+                        <i id="moreBtn">···</i>
+                    </div>
                 </div>
                 <div class="reviewInfo">
                     <p>
@@ -237,12 +242,19 @@
             </div>
         </div>
     </div>
-    <!-- 回复按钮 -->
+    <!-- 父评论回复按钮 -->
     <div class="ReplyContent">
         <div class="ReplyContentList">
             <span class="Replybtn" id="Replyuse">回复</span>
             <span class="Replybtn" id="makeknown">举报</span>
             <span class="Replybtn" id="cancel">取消</span>
+        </div>
+    </div>
+    <!-- 子评论回复按钮 -->
+    <div class="SubContent">
+        <div class="ReplyContentList">
+            <span class="Replybtn" id="Submakeknown">举报</span>
+            <span class="Replybtn" id="Subcancel">取消</span>
         </div>
     </div>
     <!-- 举报弹窗 -->
@@ -251,7 +263,7 @@
             <img src="./images/off.png" alt="" class="ReportViewImg">
             <div class="jbContent">
                 <p class="report">举报</p>
-                <p class="reportContent">举报 <i class="jbname">张三说币</i>: 评论内容评论内容内容内容恶意 谩骂攻击恶意谩骂攻击恶意谩骂攻击恶意谩骂…</p>
+                <p class="reportContent">举报<i class="jbname">张三说币</i>: 评论内容评论内容内容内容恶意 谩骂攻击恶意谩骂攻击恶意谩骂攻击恶意谩骂…</p>
             </div>
             <div class="reportRes1">
                 <span class="reportResTitle">营销广告</span>
@@ -276,7 +288,7 @@
         <!-- 回复框 -->
         <div class="ReplyboxContent">
             <div class="Replybox">
-                <input type="text" value="说点什么..." class="ReplyTest"></input>
+                <input type="text" class="ReplyTest"  onfocus="if (value =='说点什么..'){value =''}" onblur="if (value ==''){value='说点什么..'}"></input>
                 <div class="release">
                     <i id="fabuwenzhang">发布</i>
                 </div>
@@ -286,7 +298,7 @@
 </div>
 <script src="./js/bundle.js"></script>
 <script src="http://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
-<script src="./js/view.js"></script>
+<script src="./js//view.js"></script>
 </body>
 
 </html>

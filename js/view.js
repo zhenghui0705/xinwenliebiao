@@ -73,10 +73,13 @@ $(function () {
         $('.ReplyContent').hide()
         $('.commentBox').show()
     })
+    $('#Subcancel').click(function(){
+        $('.SubContent').hide()
+    })
     // 举报
-    $('#makeknown').click(function () {
+    $('#makeknown , #Submakeknown').click(function () {
         $('.jblikeViewContent').show()
-        $('.ReplyContent').hide()
+        $('.ReplyContent ,.SubContent').hide()
     })
     // 回复
     $('#Replyuse').click(function () {
@@ -86,7 +89,10 @@ $(function () {
     $('.ReportViewImg , .repNo').click(function () {
         $('.jblikeViewContent').hide()
     })
-
+    // 子评论点击
+    $('#newsinfo > .reviewTow > .reviewLike2').click(function(){
+        $('.SubContent').show()
+    })
     // 评论框的点击事件
     $(".reviewText").click(function () {
 
