@@ -120,4 +120,17 @@ $(function () {
         let newmessgae = '<div id="newsinfo"><div class="reviewTow"><div class="reviewImg"><img src = "./images/usephoto.png"alt = "" ></div><div class = "reviewTitle2" ><p>萧十一郎</p><i>8 小时前</i></div></div><div class = "reviewInfo" ><p>回复:<i class = "useName">小明小明: </i>' + message + '</p></div></div>'
 
     })
+
+    // 点击关注
+    var toggle = true;
+    $(".commentBox > .commentImg1 > img").click(function(){
+
+        if(toggle){
+            $(".commentBox > .commentImg1 > img").attr("src","./images/xinxinh.gif");
+            toggle = false
+        }else{
+            $(".commentBox > .commentImg1 > img").attr("src","./images/xinxin.png");
+            toggle = true
+        }
+    })
 })
